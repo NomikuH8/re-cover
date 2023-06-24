@@ -46,6 +46,7 @@
     p, ul > li {
       font-size: 20px;
       line-height: 43px;
+      text-align: justify;
     }
   }
 </style>
