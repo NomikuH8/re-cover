@@ -7,7 +7,7 @@
     <input required type="text" placeholder="ex: Maia Cardosa">
 
     <span>Seu email*</span>
-    <input required type="text" placeholder="ex: email@mail.com">
+    <input required type="email" placeholder="ex: email@mail.com">
 
     <span>Assunto</span>
     <input required type="text" placeholder="ex: Doação">
