@@ -44,4 +44,8 @@
     font-size: 20px;
     line-height: 43px;
   }
+
+  img {
+    width: 100%;
+  }
 </style>

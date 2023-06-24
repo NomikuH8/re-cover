@@ -34,4 +34,11 @@
       width: 300px;
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    .everything {
+      flex-wrap: wrap;
+      height: 800px;
+    }
+  }
 </style>

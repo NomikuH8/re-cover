@@ -69,4 +69,19 @@
   .vertical-line {
     border-left: 1px solid rgba(38, 39, 39, 0.32);
   }
+
+  @media only screen and (max-width: 768px) {
+    .everything {
+      flex-wrap: wrap;
+    }
+
+    form {
+      width: 300px;
+    }
+
+    .vertical-line {
+      border-left: 0;
+      border-bottom: 1px solid rgba(38, 39, 39, 0.32);
+    }
+  }
 </style>

@@ -125,4 +125,10 @@
       text-align: center;
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    nav > ul {
+      flex-wrap: wrap;
+    }
+  }
 </style>
