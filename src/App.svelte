@@ -2,12 +2,17 @@
   import { Router, link, Route } from 'svelte-navigator'
   import headerImage from './assets/header.png'
 
+  import instagramIcon from './assets/instagram.svg'
   import facebookIcon from './assets/facebook.svg'
   import twitterIcon from './assets/twitter.svg'
-  import instagramIcon from './assets/instagram.svg'
   import youtubeIcon from './assets/youtube.svg'
-  import Home from './lib/pages/home.svelte';
-  import Ecossistema from './lib/pages/ecossistema.svelte';
+
+  import Ecossistema from './lib/pages/ecossistema.svelte'
+  import ComoAjudar from './lib/pages/comoAjudar.svelte'
+  import Contato from './lib/pages/contato.svelte'
+  import Sobre from './lib/pages/sobre.svelte'
+  import Home from './lib/pages/home.svelte'
+  import CanaisDenuncia from './lib/pages/canaisDenuncia.svelte';
 
   const socialMedia = [
     {
@@ -42,6 +47,7 @@
           <li><a href="/" use:link>HOME</a></li>
           <li><a href="/ecossistema" use:link>ECOSSISTEMA</a></li>
           <li><a href="/como-ajudar" use:link>COMO AJUDAR?</a></li>
+          <li><a href="/canais-de-denuncia" use:link>CANAIS DE DENÚNCIA</a></li>
           <li><a href="/sobre" use:link>SOBRE NÓS</a></li>
           <li><a href="/contato" use:link>CONTATO</a></li>
         </ul>
@@ -60,6 +66,10 @@
   <main>
     <Route path="/" component={Home} />
     <Route path="/ecossistema" component={Ecossistema} />
+    <Route path="/como-ajudar" component={ComoAjudar} />
+    <Route path="/canais-de-denuncia" component={CanaisDenuncia} />
+    <Route path="/sobre" component={Sobre} />
+    <Route path="/contato" component={Contato} />
   </main>
   <footer>
     <span class="logo-text">re:cover</span>
