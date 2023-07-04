@@ -1,30 +1,35 @@
 <div class="everything">
   <form>
     <span>Primeiro Nome*</span>
-    <input required type="text" placeholder="ex: Henrique">
+    <input required type="text" placeholder="ex: Henrique" />
 
     <span>Último Nome*</span>
-    <input required type="text" placeholder="ex: Maia Cardosa">
+    <input required type="text" placeholder="ex: Maia Cardosa" />
 
     <span>Seu email*</span>
-    <input required type="email" placeholder="ex: email@mail.com">
+    <input required type="email" placeholder="ex: email@mail.com" />
 
     <span>Assunto</span>
-    <input required type="text" placeholder="ex: Doação">
+    <input required type="text" placeholder="ex: Doação" />
 
     <span>Informe sua dúvida*</span>
-    <textarea required cols="50" rows="5"></textarea>
+    <textarea required cols="50" rows="5" />
 
     <div>
-      <button type="submit">Enviar</button>
+      <button type="submit" on:click={() => alert("Enviado com sucesso!")}
+        >Enviar</button
+      >
     </div>
   </form>
-  <div class="vertical-line"></div>
+  <div class="vertical-line" />
   <div class="infos">
     <h3>Contato</h3>
     <span>Endereço: Joinville, SC</span>
     <span>Vakinha: <a href="#">vakinha.com/vaquinha/ongrecover</a></span>
-    <span>E-mail: <a href="mailto:recover@recover.com">recover@recover.com</a></span>
+    <span
+      >E-mail: <a href="mailto:recover@recover.com">recover@recover.com</a
+      ></span
+    >
     <span>Telefone: (47) 99999-9999</span>
   </div>
 </div>
@@ -42,7 +47,8 @@
     display: flex;
     flex-direction: column;
 
-    input, textarea {
+    input,
+    textarea {
       margin-bottom: 11px;
       padding: 0 8px;
       border: 2px solid #9b9b9b;
